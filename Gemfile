@@ -28,9 +28,9 @@ gem "jbuilder"
 
 gem 'sorcery'
 
-gem 'bootstrap', '~> 5.3.0'
+# gem 'bootstrap', '~> 5.3.0'
 
-gem 'dartsass-rails'
+# gem 'dartsass-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
