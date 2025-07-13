@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.4"
 
@@ -30,7 +31,7 @@ gem 'sorcery'
 
 # gem 'bootstrap', '~> 5.3.0'
 
-# gem 'dartsass-rails'
+gem "dartsass-rails", "~> 0.4.0"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
