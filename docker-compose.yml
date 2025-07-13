@@ -18,6 +18,9 @@ services:
       SELENIUM_DRIVER_URL: http://chrome:4444/wd/hub
     tty: true
     stdin_open: true  
+    depends_on:
+      - db
+      - chrome
     ports:
       - "3000:3000"
     volumes:
