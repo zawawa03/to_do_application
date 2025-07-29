@@ -1,0 +1,13 @@
+<div class='container'>
+  <div class='row'>
+    <div class="col-md-10 mx-auto">
+      <%= render partial: 'shared/error_message', locals: { object: @task } %>
+      <%= render partial: 'task_form', locals: { task: @task } %>
+    </div>  
+  </div>
+  <div class='row'>
+    <div class="col-md-10 mx-auto mt-4">
+      <%= link_to 'タスク一覧', tasks_path, class: "link-body-emphasis" %> 
+    </div>
+  </div>
+</div>
