@@ -11,5 +11,5 @@
     <%= f.label :limit_date, class: 'form-label' %>
     <%= f.datetime_field :limit_date, class: 'form-control', min: Time.zone.now.strftime("%Y-%m-%dT%H%M") %>
   </div>
-  <%= f.submit '新規作成', class: "btn btn-outline-primary" %>
+  <%= f.submit nil, class: "btn btn-outline-primary" %>
 <% end %>     

@@ -1,0 +1,61 @@
+ja:
+  default:
+    show: 詳細
+    edit: 編集
+    delete: 削除
+    index: タスク一覧
+  helpers:
+    submit:
+      create: 登録
+      submit: 保存
+      update: 更新
+      login: ログイン
+    label:
+      email: メールアドレス
+      password: パスワード
+  enums:
+    task:
+      state:
+        doing: 未完了
+        done: 完了
+  application:
+    require_login: ログインしてください    
+  user_sessions:
+    new:
+      title: ログイン
+      login: ログイン
+      register_page: 新規登録ページへ
+      password_forget: パスワードを忘れた方
+    create:
+      success: ログインに成功しました
+      failure: ログインに失敗しました
+    destroy:
+      success: ログアウトしました  
+  header:
+    logout: ログアウト
+    login: ログイン
+    profile: プロフィール
+    edite_profile: プロフィール編集 
+    task_index: タスク一覧
+    calender_index: カレンダー 
+    new_create: 新規作成
+  users:
+    new:
+      login_page: ログインページへ
+    create:
+      success: ユーザー登録が完了しました
+      failure: ユーザー登録が失敗しました
+  tasks:
+    index:
+      new_create: 新規作成
+    new:
+      index: タスク一覧
+    create:
+      success: タスクの登録に成功しました
+      failure: タスクの登録に失敗しました
+    edit:
+      success: タスクの更新に成功しました
+      failure: タスクの更新に失敗しました
+    destroy:
+      success: タスクの削除に成功しました  
+        

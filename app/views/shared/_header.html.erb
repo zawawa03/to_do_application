@@ -8,10 +8,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto me-5">
         <li class="nav-item me-5">
-          <%= link_to 'タスク一覧', tasks_path, class: 'link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover', style: 'font-size: 20px;' %>
+          <%= link_to t('header.task_index'), tasks_path, class: 'link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover', style: 'font-size: 20px;' %>
         </li>
         <li class="nav-item me-5">
-          <%= link_to 'カレンダー 一覧', '#', class: 'link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover', style: 'font-size: 20px;' %>
+          <%= link_to t('header.calender_index'), '#', class: 'link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover', style: 'font-size: 20px;' %>
         </li>
       </ul>
       <div class="dropdown me-5">
@@ -19,10 +19,10 @@
           <%= image_tag 'sakana.jpg', class: "rounded-circle", size: '40x40' %>
         </a>  
         <ul class="dropdown-menu dropdown-menu-right">
-          <li><a class="dropdown-item" href="#">プロフィール</a></li>
-          <li><a class="dropdown-item" href="#">プロフィール編集</a></li>
+          <li><%= link_to t('header.profile'), "#", class: "dropdown-item" %></li>
+          <li><%= link_to t('header.edite_profile'), "#", class: "dropdown-item" %></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">ログアウト</a></li>
+          <li><%= link_to t('header.logout'), user_sessions_path, class: "dropdown-item", date: { turbo_method: :delete } %></li>
         </ul>
       </div>  
     </div>

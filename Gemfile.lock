@@ -108,6 +108,8 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     drb (2.2.3)
+    enum_help (0.0.19)
+      activesupport (>= 3.0.0)
     erb (4.0.4)
       cgi (>= 0.3.3)
     error_highlight (0.7.0)
@@ -301,6 +303,7 @@ DEPENDENCIES
   capybara
   dartsass-rails (~> 0.4.0)
   debug
+  enum_help
   error_highlight (>= 0.4.0)
   importmap-rails
   jbuilder
