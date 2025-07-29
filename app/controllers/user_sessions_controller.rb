@@ -6,16 +6,15 @@ class UserSessionsController < ApplicationController
   def create
     @user = login(params[:email], params[:password])
     if @user
-      redirect_to root_path, success: 'ログインしました'
+      redirect_to root_path, success: t('user_sessions.create.success')
     else
-      flash.now[:danger] = 'ログインに失敗しました'
+      flash.now[:danger] = t('user_sessions.create.failure')
       render :new, status: :unprocessable_entity
     end
   end
 
   def destroy
     logout
-    redirect_to root_path, success: 'ログアウトしました' ,status: :see_other
+    redirect_to root_path, success: t('user_sessions.destroy.success'),status: :see_other
   end
-
 end

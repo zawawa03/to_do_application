@@ -23,11 +23,11 @@
           <%= f.label :password_confirmation, class: 'form-lael' %>
           <%= f.password_field :password_confirmation, class: 'form-control' %>
         </div>
-        <%= f.submit '登録', class: "btn btn-outline-primary" %>         
+        <%= f.submit nil, class: "btn btn-outline-primary" %>         
       <% end %>
     </div>
     <div class="login_link d-flex justify-content-center">
-      <%= link_to 'ログインページへ', new_user_sessions_path, class: 'link-body-emphasis' %>
+      <%= link_to t('.login_page'), new_user_sessions_path, class: 'link-body-emphasis' %>
     </div>  
   </div>
 </div>

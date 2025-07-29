@@ -29,6 +29,8 @@ gem "jbuilder"
 
 gem 'sorcery'
 
+gem 'enum_help'
+
 # gem 'bootstrap', '~> 5.3.0'
 
 gem "dartsass-rails", "~> 0.4.0"

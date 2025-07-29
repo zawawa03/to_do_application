@@ -16,9 +16,9 @@ class TasksController < ApplicationController
     @task = current_user.tasks.build(task_params)
 
     if @task.save
-      redirect_to tasks_path, success: 'タスクの登録に成功しました'
+      redirect_to tasks_path, success: t('tasks.create.success')
     else
-      flash.now[:danger] = 'タスクの登録に失敗しました'
+      flash.now[:danger] = t('tasks.create.failure')
       render :new, status: :unprocessable_entity
     end
   end
@@ -31,9 +31,9 @@ class TasksController < ApplicationController
     @task = current_user.tasks.find(params[:id])
 
     if @task.update(task_params)
-      redirect_to task_path, success: 'タスクの更新に成功しました'
+      redirect_to task_path, success: t('tasks.edit.success')
     else
-      flash.now[:danger] = 'タスクの更新に失敗しました'
+      flash.now[:danger] = t('tasks.edit.failure')
       render :edit, status: :unprocessable_entity
     end
   end
@@ -41,7 +41,7 @@ class TasksController < ApplicationController
   def destroy
     @task = current_user.tasks.find(params[:id])
     @task.destroy!
-    redirect_to tasks_path, success: 'タスクの削除に成功しました'
+    redirect_to tasks_path, success: t('tasks.destroy.success')
   end
 
   private
