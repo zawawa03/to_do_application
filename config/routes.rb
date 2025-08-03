@@ -6,8 +6,11 @@ Rails.application.routes.draw do
   root "top_page#top"
 
   resources :users, only: %i[new create]
+  resource :profile, only: %i[show edit update]
   resource :user_sessions, only: %i[new create destroy]
+
   resources :tasks, only: %i[new index show create edit update destroy]
+  resources :calendars, only: %i[index]
 
   # Defines the root path route ("/")
   # root "posts#index"

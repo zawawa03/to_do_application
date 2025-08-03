@@ -1,0 +1,22 @@
+<div class='container'>
+  <div class='row'>
+    <div class="col-md-8 mt-4">
+      <h1>ユーザープロフィール</h1>
+      <table class="table">
+        <tr>
+          <th scope="row"><%= User.human_attribute_name(:email) %></th>
+          <td><%= current_user.email %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= User.human_attribute_name(:full_name) %></th>
+          <td><%= current_user.full_name %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= User.human_attribute_name(:avatar) %></th>
+          <td><%= image_tag current_user.decorate.image_resize(200, 200) %></td>
+        </tr>
+      </table>
+      <%= link_to t('default.edit'), edit_profile_path, class: "btn btn-success" %>
+    </div>
+  </div>
+</div>

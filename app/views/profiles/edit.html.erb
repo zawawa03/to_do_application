@@ -1,0 +1,33 @@
+<div class="container user_create_form">
+  <div class="row">
+    <div class="col-md-10 mx-auto mt-5">
+      <h1>プロフィール編集</h1>
+      <%= render partial: 'shared/error_message', locals: { object: @user } %>
+      <%= form_with model: @user, url: profile_path, method: :put, multipart: true do |f| %>
+        <div class="mb-3">
+          <%= f.label :last_name, class: 'form_label' %>
+          <%= f.text_field :last_name, class: 'form-control' %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :first_name, class: 'form-label' %>
+          <%= f.text_field :first_name, class: 'form-control' %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :email, class: 'form-label' %>
+          <%= f.email_field :email, class: 'form-control' %>
+        </div>
+        <div>
+          <%= f.label :avatar, class: 'form-label' %>
+          <%= f.file_field :avatar, class: 'form-control' %>
+          <i class="bi bi-files"></i>
+        </div>
+        <div class="mt-3">
+          <% if @user.avatar.attached? %>
+            <%= image_tag @user.decorate.image_resize(200, 200) %>
+          <% end %>
+        </div>    
+        <%= f.submit nil, class: "btn btn-outline-primary mt-3" %>         
+      <% end %>
+    </div>  
+  </div>
+</div>
