@@ -4,11 +4,11 @@
       <h1>タスク詳細</h1>
       <div class="d-flex my-3">
         <h3><%= @task.name %></h3>
-        <div class="bg-primary-subtle border border-primary-subtle rounded-3 ms-3"><p class="text-primary-emphasis m-2"><%= @task.state %></p></div>
+        <div class="bg-primary-subtle rounded-3 ms-3 <%= task_state_class(@task.state) %>"><p class="m-2 <%= task_state_class(@task.state) %>"><%= @task.state_i18n %></p></div>
       </div>
       <div class="date">
         <h5>期限</h5>
-        <span class="border-bottom border-primary-subtle fs-5"><%= l @task.limit_date, format: :long %></span>
+        <span class="border-bottom border-primary-subtle fs-5"><%= l @task.start_time, format: :long %></span>
       </div>
       <div class="content my-3">
         <h5>内容</h5>

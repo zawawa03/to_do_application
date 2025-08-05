@@ -1,11 +1,11 @@
 class TasksController < ApplicationController
   
   def index
-    @tasks = Task.includes(:user)
+    @tasks = current_user.tasks.includes(:user)
   end
 
   def show
-    @task = Task.find(params[:id])
+    @task = current_user.tasks.find(params[:id])
   end
 
   def new
@@ -47,6 +47,6 @@ class TasksController < ApplicationController
   private
 
   def task_params
-    params.require(:task).permit(:name, :body, :limit_date, :state)
+    params.require(:task).permit(:name, :body, :start_time, :state)
   end
 end

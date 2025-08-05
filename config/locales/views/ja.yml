@@ -57,5 +57,13 @@ ja:
       success: タスクの更新に成功しました
       failure: タスクの更新に失敗しました
     destroy:
-      success: タスクの削除に成功しました  
+      success: タスクの削除に成功しました
+  profiles:
+    update:
+      success: プロフィールの更新に成功しました
+      failure: プロフィールの更新に失敗しました
+  simple_calendar:
+    previous: 前月
+    next: 翌月
         
+    

@@ -9,6 +9,7 @@ Rails.application.config.assets.paths << Rails.root.join("app/assets/builds")
 Rails.application.config.assets.precompile += %w( builds/application.css builds/application.js )
 
 Rails.application.config.assets.paths << Rails.root.join("node_modules")
+Rails.application.config.assets.paths << Rails.root.join("node_modules/bootstrap-icons/font")
 # Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path
 

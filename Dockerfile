@@ -19,6 +19,7 @@ RUN apt-get update -qq && \
     apt-get install -y nodejs npm && \
     npm install -g yarn && \
     curl https://sh.rustup.rs -sSf | sh -s -- -y
+RUN apt-get update -qq && apt-get install -y libvips    
 
 ENV PATH="/root/.cargo/bin:${PATH}"
 

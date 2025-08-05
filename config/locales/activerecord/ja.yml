@@ -5,13 +5,15 @@ ja:
       user: ユーザー
     attributes:
       task:
-        name: 名前
+        name: タスク名
         body: 内容
-        limit_date: 期日
+        start_time: 期日
         state: ステータス
       user:
         email: メールアドレス
         first_name: 姓
         last_name: 名
+        full_name: フルネーム
         password: パスワード
         password_confirmation: パスワード確認
+        avatar: アバター画像
