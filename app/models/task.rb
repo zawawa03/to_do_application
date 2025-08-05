@@ -11,7 +11,7 @@ class Task < ApplicationRecord
   belongs_to :user
   
   validates :name, presence: true, length: { maximum: 100 }
-  validates :body, presence: true, length: { maximum: 65_535 }
+  validates :body, length: { maximum: 65_535 }
 
   enum state: { doing: 0, done: 1 }
 end

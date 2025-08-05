@@ -62,4 +62,8 @@ ja:
     update:
       success: プロフィールの更新に成功しました
       failure: プロフィールの更新に失敗しました
+  simple_calendar:
+    previous: 前月
+    next: 翌月
+        
     

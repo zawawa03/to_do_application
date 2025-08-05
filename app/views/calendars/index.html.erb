@@ -4,12 +4,16 @@
       <%= month_calendar events: @tasks, attribute: :start_time do |date, tasks| %>
         <%= date.day %>
 
-        <% tasks.each do |task| %>
+        <% tasks.sort_by(&:start_time).each do |task| %>
           <div>
-            <%= task.name %>
+            <%= link_to task.name, task_path(task), class: "fs-6 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" %>
+            <small><%= l task.start_time, format: :short %></small>
+            <span class= "<%= task_state_class(task.state) %>">
+              <%=  task.state_i18n %>
+            </span>
           </div>
         <% end %>
-      <% end %>      
+      <% end %>
     </div>
   </div>
 </div>

@@ -5,7 +5,7 @@ ja:
       user: ユーザー
     attributes:
       task:
-        name: 名前
+        name: タスク名
         body: 内容
         start_time: 期日
         state: ステータス

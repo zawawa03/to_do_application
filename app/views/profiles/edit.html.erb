@@ -19,14 +19,14 @@
         <div>
           <%= f.label :avatar, class: 'form-label' %>
           <%= f.file_field :avatar, class: 'form-control' %>
-          <i class="bi bi-files"></i>
+          <p><i class="bi bi-file-earmark-image"></i>jpg or png</p>
         </div>
         <div class="mt-3">
           <% if @user.avatar.attached? %>
             <%= image_tag @user.decorate.image_resize(200, 200) %>
           <% end %>
         </div>    
-        <%= f.submit nil, class: "btn btn-outline-primary mt-3" %>         
+        <%= f.submit nil, class: "btn btn-outline-primary mt-3" %>     
       <% end %>
     </div>  
   </div>
