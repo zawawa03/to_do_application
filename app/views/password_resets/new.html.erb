@@ -1,0 +1,14 @@
+<div class="contaimer">
+  <div class="row">
+    <div class="col-md-10 mx-auto mt-5">
+      <h4>ご登録のメールアドレスを入力してください</h4>
+      <%= form_with url: password_resets_path do |f| %>
+        <div class="mb-3">
+          <%= f.label :email, class: "form-label" %>
+          <%= f.email_field :email, class: "form-control" %> 
+        </div>
+        <%= f.submit t('helpers.submit.send'), class:"btn btn-outline-primary" %>
+      <% end %>  
+    </div>
+  </div>
+</div>  

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>管理画面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+  </head>
+
+  <body>
+    <%= render 'admin/shared/header' %>
+    <%= render 'shared/flash_message' %>
+    <div class="d-flex">
+      <%= render 'admin/shared/sidebar' %>
+      <%= yield %>
+    </div>  
+    <%= render 'admin/shared/footer' %>      
+  </body>
+</html>
