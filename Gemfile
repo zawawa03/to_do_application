@@ -41,6 +41,8 @@ gem "dartsass-rails", "~> 0.4.0"
 
 gem 'rails-i18n', '~> 7.0.0'
 
+gem 'letter_opener_web', '2.0.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

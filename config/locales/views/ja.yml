@@ -10,6 +10,7 @@ ja:
       submit: 保存
       update: 更新
       login: ログイン
+      send: 送信
     label:
       email: メールアドレス
       password: パスワード
@@ -65,5 +66,12 @@ ja:
   simple_calendar:
     previous: 前月
     next: 翌月
+  mailers:
+    navigate: パスワード変更のご案内
+  password_resets:
+    send: パスワードリセットのメールを送信しました
+    success: パスワードの変更に成功しました
+    failure: パスワードの変更に失敗しました
+    
         
     

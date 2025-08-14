@@ -1,0 +1,17 @@
+<header class='before_logged_in_header'>
+<nav class="navbar bg-body-tertiary ps-5 navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+  <div class="container-fluid mt-3">
+    <div class="d-flex">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidth" aria-expanded="false" aria-controls="collapseWidth">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand ms-3" href='/'><h1>管理画面</h1></a>
+    </div>  
+    <div class="navbar-nav">
+      <div class="nav-item">
+        <%= link_to t('header.logout'), admin_logout_path, data: { turbo_method: :delete }, local: true, class: 'nav-link px-3 text-white' %>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
