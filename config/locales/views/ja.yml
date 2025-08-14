@@ -4,6 +4,7 @@ ja:
     edit: 編集
     delete: 削除
     index: タスク一覧
+    users: ユーザー一覧
   helpers:
     submit:
       create: 登録
@@ -19,6 +20,10 @@ ja:
       state:
         doing: 未完了
         done: 完了
+    user:
+      role:
+        general: 一般
+        admin: 管理者    
   application:
     require_login: ログインしてください    
   user_sessions:
@@ -72,6 +77,9 @@ ja:
     send: パスワードリセットのメールを送信しました
     success: パスワードの変更に成功しました
     failure: パスワードの変更に失敗しました
+    
+      
+
     
         
     
