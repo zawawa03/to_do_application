@@ -13,6 +13,9 @@
         <li class="nav-item me-5">
           <%= link_to t('header.calender_index'), calendars_path, class: 'link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover', style: 'font-size: 20px;' %>
         </li>
+        <li class="nav-item">
+          <span class="text-light fs-5"><%= current_user.decorate.full_name %></span>
+        </li>
       </ul>
       <div class="dropdown me-5">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -5,11 +5,13 @@ ja:
       user: ユーザー
     attributes:
       task:
+        id: ID
         name: タスク名
         body: 内容
         start_time: 期日
         state: ステータス
       user:
+        id: ID
         email: メールアドレス
         first_name: 姓
         last_name: 名
@@ -17,3 +19,4 @@ ja:
         password: パスワード
         password_confirmation: パスワード確認
         avatar: アバター画像
+        role: 役割

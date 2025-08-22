@@ -22,7 +22,7 @@ class Admin::UsersController < Admin::BaseController
     end
   end
 
-  def delete
+  def destroy
     @user = User.find(params[:id])
     @user.destroy!
     redirect_to admin_users_path, success: 'ユーザーの削除に成功しました'
@@ -31,6 +31,6 @@ class Admin::UsersController < Admin::BaseController
   private
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email)
+    params.require(:user).permit(:first_name, :last_name, :email, :role, :avatar)
   end
 end
